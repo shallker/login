@@ -1,0 +1,40 @@
+doctype 5
+html
+  head
+    title Login
+    link(rel="stylesheet", href="gumby-v2.0_custom/css/gumby.css")
+    link(rel="stylesheet", href="css/index.css")
+    script(src="js/lib/modernizr-2.0.6.min.js")
+    script(src="js/jquery/jquery-1.8.3.js")
+    script(src="gumby-v2.0_custom/js/libs/gumby.js")
+    script(src="js/index.js")
+  body(style="background: #E9E9E9;")
+    .container
+      div(style="margin-top: 100px;")
+      .row
+        .two.columns.centered
+          div(style="height: 100px;")
+          //- #icon-user-shape.image.circle(style="position: absolute; top: 0;")
+          //-   img.icon-user-shape(src="img/icon_user.png")
+          #icon-user-shap
+          #icon-user
+            //- img.icon-user(src="img/shallker.jpg")
+
+      
+      div(style="margin-top: 40px;")
+      .row
+        .six.columns.centered
+          .prepend.append.double.field
+            input.input-username.text.input(type="text", placeholder="username")
+            input.input-password.password.input(type="password", placeholder="password")
+      
+      //- .row
+      //-   .six.columns.centered
+      //-     .alert.danger Username or password is wrong
+
+
+      div(style="margin-top: 40px;")
+      .row
+        .two.columns.centered
+          .medium.default.btn(style="width: 100%; opacity: 0.5;")
+            a(href="#") Login
