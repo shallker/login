@@ -89,6 +89,9 @@
           return;
         }
         InputUsername.value = InputUsername.input.val();
+        if (InputUsername.value.indexOf('@') < 1) {
+          return;
+        }
         if (InputUsername.isEmail(InputUsername.value)) {
           return InputUsername.getUser(InputUsername.value);
         }
@@ -144,6 +147,9 @@
           return;
         }
         InputPassword.value = InputPassword.input.val();
+        if (InputPassword.value < 6) {
+          return;
+        }
         return InputPassword.validate(InputPassword.value);
       };
 

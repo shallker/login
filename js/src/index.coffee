@@ -57,6 +57,7 @@ $ ->
       # @log 'onKeyup'
       return if @input.val() is @value
       @value = @input.val()
+      return if @value.indexOf('@') < 1
       @getUser @value if @isEmail @value
 
     @getUser: (username)->
@@ -99,6 +100,7 @@ $ ->
       log 'onKeyup'
       return if @input.val() is @value
       @value = @input.val()
+      return if @value < 6
       @validate @value
 
     @onFocus: (ev)=>
